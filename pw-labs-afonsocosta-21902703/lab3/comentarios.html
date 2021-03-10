@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <meta charset="utf-8">
+        <meta name="author" content="Afonso Costa">
+        <meta name="keywords" content="palavras chave">
+        <meta name="description" content="Website sobre Sintra">
+        <title>Sintra</title>
+    </head>
+    <body style="background-color:	#9ACD32">
+        <h3>Comentários</h3>
+        <li>   
+            <a href="index.html">Introdução</a>
+        </li>
+        <li>
+            <a href="local.html">Localização</a>
+        </li>
+        <li>
+            <a href="multimedia.html">Multimédia</a>
+        </li>
+        <li>
+            <a href="info.html">Informações</a>
+        </li>
+        <li>
+            <a href="../index.html">Home</a>
+        </li>
+        <li>
+            <a href="quizz.html">Quizz</a>
+        </li>
+        <li>
+            <a href="comentarios.html">Comentários</a>
+        </li>
+        <br>
+        <form method="POST" enctype="multipart/form-data" action="mailto:afonsoccosta97@gmail.com?subject=ProgWeb%20Lab3%20Comentarios" name="Comentários" id="Comentários"></form>
+        <fieldset>
+            <legend>Avaliação do website (0 a 100)</legend>
+            <label>Clareza</label><br>
+            <input type="range" name="clareza" id="clareza" min="0" max="100"><br>
+            <label>Rigor</label><br>  
+            <input type="range" name="rigor" id="rigor" min="0" max="100"><br>
+            <label>Precisão(exato, segundo o nível necessário do pormenor)</label><br>
+            <input type="range" name="precisao" id="precisao" min="0" max="100"><br>
+            <label>Profundidade</label><br>
+            <input type="range" name="Profundidade" id="Profundidade" min="0" max="100"><br>
+            <label>Amplitude</label><br>
+            <input type="range" name="Amplitude" id="Amplitude" min="0" max="100"><br>
+            <label>Lógica</label><br>
+            <input type="range" name="logica" id="logica" min="0" max="100"><br>
+            <label>Significância</label><br>
+            <input type="range" name="Significância" id="Significância" min="0" max="100"><br>
+            <label>Originalidade</label><br>
+            <input type="range" name="Originalidade" id="Originalidade" min="0" max="100"><br>
+            <label>Sugestões</label><br>
+            <textarea name="sugestoes" id="" cols="100" rows="5"></textarea><br><br>
+            <p hidden>Avaliação de laboratório 3 </p>
+            <input type="submit" value="Submeter">
+        </fieldset>
+        </form>
+    </body>
+</html>

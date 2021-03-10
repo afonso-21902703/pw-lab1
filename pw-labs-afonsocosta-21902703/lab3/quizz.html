@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <meta charset="utf-8">
+        <meta name="author" content="Afonso Costa">
+        <meta name="keywords" content="palavras chave">
+        <meta name="description" content="Website sobre Sintra">
+        <title>Sintra</title>
+    </head>
+    <body style="background-color:	#9ACD32">
+        <h3>Quizz</h3>
+        <li>   
+            <a href="index.html">Introdução</a>
+        </li>
+        <li>
+            <a href="local.html">Localização</a>
+        </li>
+        <li>
+            <a href="multimedia.html">Multimédia</a>
+        </li>
+        <li>
+            <a href="info.html">Informações</a>
+        </li>
+        <li>
+            <a href="../index.html">Home</a>
+        </li>
+        <li>
+            <a href="quizz.html">Quizz</a>
+        </li>
+        <li>
+            <a href="comentarios.html">Comentários</a>
+        </li>
+        <br>
+        <form method="POST" enctype="multipart/form-data" action="mailto:afonsoccosta97@gmail.com?subject=ProgWeb%20Lab3%20Quizz" name="quizz" id="quizz">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>Nome: <input type="text" name="nome" placeholder="João" autofocus></p>
+            <p>Apelido: <input type="text" name ="apelido" placeholder="Silva" autofocus></p>
+            <p>email: <input type="email" name="email" placeholder="user123@hotmail.com" autocomplete="off" required ></p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Monumentos na cidade que pretende visitar</legend>
+            <input type="checkbox" id="monumento1" name="monumento1" value="Palácio da Pena">
+            <label for="monumento1"> Palácio da Pena</label><br>
+            <input type="checkbox" id="monumento2" name="monumento2" value="Quinta da Regaleira">         
+            <label for="monumento2"> Quinta da Regaleira</label><br>
+            <input type="checkbox" id="monumento3" name="monumento3" value="Palácio da Seteais">
+            <label for="monumento3"> Palácio de Seteais</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Já visitou Sintra?</legend>
+            <input type="radio" id="sim" name="sim" value="sim">
+            <label for="sim">Sim</label><br>
+            <input type="radio" id="não" name ="não" value="não">
+            <label for="não">Não</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Em que data foi fundada a cidade de Sintra?</legend>
+            <label for="date">Insira a data</label>
+            <input type="date" name="data_criação" id="data_criação">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Que cor associa a Sintra?</legend>
+            <label for="cor">Selecione a cor</label>
+            <input type="color" name="cor" id="cor">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Quantos tuktuks existem andam por Sintra?</legend>
+            <label for="quantidade">Tuktuks (entre 0 e 100):</label>
+            <input type="range" id="quantidade" name="quantidade" min="0" max="100">
+        </fieldset>
+        <fieldset>
+            <legend>Quantas pastelarias Piriquita existem em Sintra?</legend>
+            <label for="quantidade">Número de Piriquitas (entre 1 e 3):</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" max="3"><br>
+            <input type="image" src="images/submite.png" alt="Submit" width="48" height="48">
+        </fieldset>
+        <br>
+        <h2>Se já visitou Sintra, insira a sua idade e descreva a sua experiência e fotos que tenha tirado!</h2>
+        <form action="/action_page.php"></form>
+            <legend></legend>
+            <label for="idade">Idade:</label>
+            <input type="text" name="idade" id="idade" size="2" maxlength="2"><br>
+            <label for="experiencia">Experiência:</label>
+            <input type="text" name="experiência" id="experiencia"> <br>
+            <label for="files">Selecione as fotos</label>
+            <input type="file" name="files" id="files" multiple><br>
+        </form>
+        <br>
+        <fieldset>
+            <legend>Quantos restaurantes há em Sintra?</legend>
+            <label for="Restaurantes">Restaurantes</label>
+            <input type="number" name="Restaurantes" id="Restaurantes" step="2">
+        </fieldset>
+        <h3>Que pertentagem da área de Sintra é natureza?</h3>
+        <form>
+            <input type="range" min="0" max="100"
+            name="taxa" value="0"
+            oninput="taxaN.value = parseInt(taxa.value)">
+            <output name="taxaN" for="taxa">0</output> %   
+        </form>
+    </form>
+    <input type="submit" value="Submeter" form="quizz">    
+    </body>
+</html>
